@@ -1,0 +1,19 @@
+.subTitle{
+    margin-top: 50px;
+}
+
+.text1{
+    margin-top: 70px;
+    display:flex;
+    justify-content:center;
+}
+
+.text2{
+    margin-top: 20px;
+    display:flex;
+    justify-content:center;
+}
+
+#locationimg{
+    margin : 50px 0px 0px 70px;
+}
