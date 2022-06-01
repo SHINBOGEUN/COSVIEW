@@ -9,6 +9,24 @@
     width: 300px;
     height: 40px;
 }
+.h{
+    border-bottom: 1px solid gray; margin-top: 70px;
+}
+.table1{
+    position: relative; top: 100px; margin-right: auto; margin-left: auto; text-align: center; font-size : 22px
+}
+.td1{
+    border-bottom:1px solid gray ; height: 40px;
+}
+.td3{
+    height: 20px; width: 900px;
+}
+.td4{
+    height: 80px;
+}
+#inp1{
+    background-color: rgb(200,207,165); color: white;
+}
 .log-btn{
     border: none;
     border-radius: 5px;
