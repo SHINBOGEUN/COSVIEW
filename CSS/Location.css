@@ -1,14 +1,12 @@
-.subTitle{
-    margin-top: 50px;
-}
+/* Location.css */
 
-.text1{
+.SubTitle{
     margin-top: 70px;
     display:flex;
     justify-content:center;
 }
 
-.text2{
+.LocationText{
     margin-top: 20px;
     display:flex;
     justify-content:center;
