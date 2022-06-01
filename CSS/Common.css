@@ -7,3 +7,7 @@ body{
     padding: 0;
     font-family: "Jua";
 }
+button a {
+    text-decoration: none;
+    color: white;
+}
