@@ -8,3 +8,45 @@
     border: none;
     background-color: white;
 }
+#pro-search{
+    width :450px; 
+    height:40px;
+}
+.search-main{
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+.search-main button{
+    height: 40px;
+    border: none;
+    background-color: white;
+}
+.search-main button i{
+    color: gray;
+    font-size: 20px;
+}
+.popular{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 70px;
+    text-align: center;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #C0C0C0;
+}
+.best{
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.best-review{
+    margin-top: 100px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.review-date{
+    font-size: 10px;
+    font-weight: 100;
+}
