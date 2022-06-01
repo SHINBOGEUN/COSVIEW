@@ -12,20 +12,22 @@
     <link rel="stylesheet" href="CSS/Location.css">
     <link rel="stylesheet" href="CSS/Common.css">
     <link rel="stylesheet" href="CSS/nav.css">
-    
+    <link rel="stylesheet" href="CSS/FAQ.css">
+</head>
 <body>
   <nav class="nav-var">
     <div class="logo" id="logo4">
-      <a href="Home.html"><img src="../image/logo4.png" width="45", height="45"></a>
+      <a href="Home.html"><img src="simbol.png" width="45", height="45"></a>
     </div>
+
     <div class="category">
       <button id="nav-btn" class="navbar-toggler collapsed" onclick="openNav()"><i class="fa-solid fa-bars "></i></button>
     </div>
     <div class="side-menu" id="mySidenav">
-      <a href="Home.html"><img src="../image/logo2.png" width="100%" height="60px" alt=""></a>
+      <a href="Home.html"><img src="image/logo2.png" width="100%" height="50px" alt=""></a>
       <div class="side-menu-center">
         <div class="side-menu-list" id="menu-list">
-         <ul class="main-side">
+         <ul>
            <li><a>제품</a></li>
            <li><a>코스뷰 이야기</a></li>
            <li><a>고객센터</a></li>
@@ -35,8 +37,8 @@
       </div>
     </div>
     <div class="menu-var">
-      <button><a href="../Login/login.html">로그인</a></button>
-      <button><a href="../Search/search.html"><i class="fa-solid fa-magnifying-glass"></i></a></button>
+      <button><a href="login.html">로그인</a></button>
+      <button><i class="fa-solid fa-magnifying-glass"></i></button>
     </div>
   </nav>
 
@@ -45,14 +47,49 @@
 
       <!-- 여기 코드 작성 해주세요 !!! -->
       <main class="container">
-<<<<<<< HEAD
-        <div class="product-name">
-            <h1 class="sub-name">제목</h1>
-=======
->>>>>>> 16026f5be8776dd447417c6f3f13c3aa0f2302f6
-
-            
+        <div id="FAQHeader">
+          <h1>고객센터</h1><hr>
         </div>
+        <div id="FAQSearchbox">
+          <p id="FAQMain">FAQ</p>
+        </div>
+        <div >
+          <span>총 1512건</span>
+          <span style="float: right;"><input type="FAQHeader" class="FAQSearch" placeholder="내용을 입력하세요.">
+          <i class="fa-solid fa-magnifying-glass searchicon"></i></span>
+        </div>
+        <hr>
+        <ul class="FAQ-level1">
+          <li>
+              <input type="checkbox" style="display: none;" id="check">
+              <a style="margin-right: 45px;">회원가입</a><label for="check" style="width:90%;">회원가입은 어떻게 하나요?</label>
+              <ul class="FAQ-level2">
+                  <li><a href="#" class="FAQList">[로그인>회원가입]을 선택하여 회원 가입 절차에 따라 진행해주시면 됩니다.</a></li>
+              </ul>
+          </li>
+          <li>
+            <input type="checkbox" style="display: none;" id="check2">
+            <a style="margin-right: 45px;">회원탈퇴</a><label for="check2" style="width:90%;">회원탈퇴는 어떻게 하나요?</label>
+              <ul class="FAQ-level2">
+                  <li><a href="#" class="FAQList">마이페이지 -> 내 정보 수정에 회원탈퇴 버튼이 있습니다.</a></li>
+              </ul>
+          </li>
+          <li>
+            <input type="checkbox" style="display: none;" id="check3">
+            <a style="margin-right: 45px;">리뷰작성</a><label for="check3" style="width:90%;">리뷰 작성은 어떻게 하나요?</label>
+              <ul class="FAQ-level2">
+                  <li><a href="#" class="FAQList">제품 설명 하단부분에 보시면 리뷰작성버튼이 있습니다.</a></li>
+              </ul>
+          </li>
+          <li>
+              <input type="checkbox" style="display: none;" id="check4">
+              <a style="margin-right: 45px;">리뷰수정</a><label for="check4"  style="width:90%;">리뷰 수정은 어떻게 하나요?</label>
+
+              <ul class="FAQ-level2">
+                  <li><a href="#" class="FAQList">마이페이지에 내가 작성한 리뷰에 리뷰수정이 버튼이 있습니다.</a></li>
+              </ul>
+          </li>
+        </ul>
       </main>
 
 
@@ -62,7 +99,7 @@
         <div class="container">
           <div class="first-line">
             <div class="fot-a">
-              <a href="#" onclick="window.open(`Home.html`, '회사소개','width=500px, height=700px'); return false">회사소개</a>
+              <a href="index.html">회사소개</a>
               <span> | </span>
               <a href="#">이용약관</a>
               <span> | </span>
