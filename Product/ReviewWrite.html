@@ -40,15 +40,56 @@
     </div>
   </nav>
 
+  <style>
+    #PInformation{
+      margin-top: 100px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #PText{
+      display: flex;
+      flex-direction: column;
+    }
+    #brand-name{
+      font-size: 14px;
+      color:gray;
+      margin: 8px 0 0 0;
+    }
+    #product-name{
+      font-size: 24px;
+      margin: 0;
+    }
+    #line{
+      border: 0;
+      height: 2px;
+      width: 80%;
+      margin: 0 auto;
+    }
+  </style>
 
 
 
       <!-- 여기 코드 작성 해주세요 !!! -->
+      <!-- 제목 -->
       <main class="container">
-        <div class="product-name">
-            <h1 class="sub-name">리뷰 작성</h1>
+        <h1 class="sub-title">리뷰 작성</h1>
 
+        <!-- 제품정보 -->
+        <div id="PInformation">
+          <div id="ProductImage">
+            <img src="../image/크림.png" width="80px" height="80px">
+          </div>
+          <div id="PText">
+            <h6 id="brand-name">브랜드명</h6>
+            <h4 id="product-name">제품명</h4>  
+          </div>
         </div>
+        <hr id="line">
+          
+
+        <!-- 평점 -->
       </main>
 
 
