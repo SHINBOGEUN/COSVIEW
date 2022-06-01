@@ -1,3 +1,4 @@
+/* 폰트 - 배달의민족 도현체 */
 @font-face{
 	src: url("../font/BMDOHYEON_ttf.ttf");
     font-family: "Jua"; 
@@ -10,4 +11,11 @@ body{
 button a {
     text-decoration: none;
     color: white;
+}
+
+/* 페이지 마다 상단 고정 타이틀 */
+.sub-title{
+    display: flex;
+    border-bottom: 1px solid #C0C0C0;
+    margin-top: 70px;
 }
