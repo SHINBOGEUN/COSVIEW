@@ -37,10 +37,11 @@
     text-align: left; height: 200px; border-top: 1px solid gray; border-bottom:1px solid gray
 }
 .sel1{
-    width: 150px; position: relative; left: 200px; top:320px
+    width: 150px; position: relative; left: 200px; top:320px; z-index: 5;
 }
 .inp{
-    position: absolute; width: 700px; height: 500px; top: 500px; right: 410px;
+    position: absolute; width: 700px; line-height: 500px; height: 500px; top: 500px; right: 410px; z-index: 5; 
+
 }
 .table2{
     width: 900px; height: 100px; position: relative; left: 200px; bottom: 45px;
@@ -52,7 +53,7 @@
     height: 16px; width: 16px;
 }
 .inp3{
-
+    height: 16px; width: 16px;
 }
 #td7{
     width: 100px;

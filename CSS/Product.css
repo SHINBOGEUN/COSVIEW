@@ -1,13 +1,1 @@
 /* 제품 */
-.product-name{
-    display: flex;
-    border-bottom: 1px solid #C0C0C0;
-    margin-top: 70px;
-}
-.sub-name{
-    display: block;
-}
-#cate-btn{
-    border: none;
-    background-color: white;
-}
