@@ -91,16 +91,16 @@
 
 
 
-#top-title{
+#main-body{
     font-size:36px;
-    margin-left:20%;
-    margin-right:20%;
+    margin-left:10%;
+    margin-right:10%;
 }
 
-#top-title hr{
+#main-body hr{
     border:2px solid gray;
 }
-#middle-title{
+#middle-body{
     font-size:28px;
     margin-left:10%;
     margin-right: 10%; 
@@ -108,4 +108,14 @@
 }
 #middle-content{
     font-size:15px;
+    margin-top:5%;
   }
+#button-div{
+    font-size:20px;
+    margin-top:10%;
+}
+#button-div button{
+    width:120px;
+    height:50px;
+    margin:0%5%5%10%;
+}
