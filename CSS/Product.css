@@ -82,12 +82,14 @@ text-align: center;
 padding-bottom: 50px;
 border-bottom: 1px solid #C0C0C0;
 }
+
 .best{
-margin-top: 70px;
 display: flex;
 flex-direction: column;
 align-items: center;
 }
+
+
 #pro-search{
     width :450px; 
     height:40px;
@@ -114,8 +116,8 @@ align-items: center;
     padding-bottom: 50px;
     border-bottom: 1px solid #C0C0C0;
 }
-.best{
-    margin-top: 70px;
+.best {
+    margin-top: 120px;
     display: flex;
     flex-direction: column;
     align-items: center;

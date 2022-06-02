@@ -1,5 +1,14 @@
 let flag = true;
 
+
+
+
+
+const openCate = () => {
+  document.getElementById("cate-btn").style.width = "200px";
+}
+
+
 const openNav = () => {
     if (flag == true){
       document.getElementById("mySidenav").style.width = "200px";
