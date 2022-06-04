@@ -19,3 +19,29 @@ button a {
     border-bottom: 1px solid #C0C0C0;
     margin-top: 70px;
 }
+
+/* 초록색 작은버튼 */
+.green-btn{
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(200, 207, 165);
+    color: white;
+    height: 45px;
+    width: 100px;
+}
+.green-btn:hover{
+    box-shadow: 1px 1px 1px 1px gray;
+}
+
+/* 연회색 작은버튼 */
+.gray-btn{
+    border: none;
+    border-radius: 5px;
+    background-color: lightgray;
+    color: white;
+    height: 45px;
+    width: 100px;
+}
+.gray-btn:hover{
+    box-shadow: 1px 1px 1px 1px gray;
+ }
