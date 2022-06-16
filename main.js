@@ -1,9 +1,6 @@
 let navflag = true;
 
 
-
-
-
 const openCate = () => {
   
 }
@@ -23,3 +20,19 @@ const openNav = () => {
       navflag = true
     }
   };
+// 메인화면 슬릭
+  $('.one-time').slick({
+    dots: true,
+    infinite: true,
+    speed: 200,
+    slidesToShow: 1,
+    slidesToScroll:1,
+    adaptiveHeight: true,
+    vertical : false,
+    prevArrow:"<button id=prev>&lt;</button>",
+    nextArrow:"<button id=next>&gt;</button>",
+    dots:true,
+    dotsClass:'bn-controller' ,
+  });
+
+  
