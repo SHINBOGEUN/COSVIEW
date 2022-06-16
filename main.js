@@ -34,5 +34,14 @@ const openNav = () => {
     dots:true,
     dotsClass:'bn-controller' ,
   });
+  $('.multiple-items').slick({
+    infinite: true,
+    slidesToShow: 2,
+    speed: 1000,
+    autoplaySpeed : 2000,
+    arrows : false,   //prev,next버튼 표시여부
+    autoplay: true,  //자동넘김 여부
+    slidesToScroll: 3
+  });
 
   
