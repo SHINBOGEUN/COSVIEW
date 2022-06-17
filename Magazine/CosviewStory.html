@@ -8,10 +8,9 @@
     <link href="image/logo4.png" rel="shortcut icon" type="image/x-icon">
     <script src="https://kit.fontawesome.com/2c827c8cca.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="CSS/Location.css">
-    <link rel="stylesheet" href="CSS/Common.css">
-    <link rel="stylesheet" href="CSS/nav.css">
+    <link rel="stylesheet" href="../CSS/Footer.css">
+    <link rel="stylesheet" href="../CSS/Common.css">
+    <link rel="stylesheet" href="../CSS/nav.css">
     
 <body>
   <nav class="nav-var">
@@ -45,9 +44,94 @@
 
       <!-- 여기 코드 작성 해주세요 !!! -->
       <main class="container">
-            <h1 class="sub-title">제목</h1>
+            <h1 class="sub-title">COSVIEW 이야기</h1>
 
-            <p>asdasdsadkfjhkjdshfjshdkjashdjkashdjksahk</p>
+            <style>
+              .card{
+                  width: 250px;
+                  height: 250px;
+                  position: relative;
+                  margin: 150px 50px;
+                  cursor: pointer;
+              }
+              .card img{
+                  width: 100%;
+                  height: 100%;
+                  transition: 0.4s;
+              }
+              .card img:hover{
+                  /* 마우스 갖다댔을때 살짝 커지도록 */
+                  transform: scale(1.03,1.03);
+                  transition: 0.4s;
+              }
+              .iteminfo{
+                  width: 200px;
+                  height: 200px;
+                  position: absolute;
+                  /* left: 0px; */
+                  top: 260px;
+                  /* padding: 10px; */
+              }
+              .iteminfo span,a{font-size: 0.5rem;}
+              .iteminfo p{font-size:0.7rem;}
+              .contents{
+                  display: flex;
+                  justify-content: space-around;
+                  /* 한 라인에 다 못잡으면 하단으로 내려줌 */
+                  flex-wrap: wrap;
+              }
+              .contents a{
+                color: black;
+              }
+          </style>
+
+            <div class="contents">
+              <a href="#">
+                <div class="card">
+                    <img src="../image/선크림.png">
+                    <div class="iteminfo">
+                        <h6>인기 선크림!!</h6>
+                        <p>이상품에 대한 설명이 들어갑니다</p>
+                    </div>
+                </div>
+              </a>
+              <a href="#">
+                <div class="card">
+                    <img src="../image/크림.png">
+                    <div class="iteminfo">
+                        <h6>인기 크림!!</h6>
+                        <p>이상품에 대한 설명이 들어갑니다</p>
+                    </div>
+                </div>
+              </a>
+              <a href="#">
+                <div class="card">
+                    <img src="../image/밤.png">
+                    <div class="iteminfo">
+                        <h6>인기 바디밤!!</h6>
+                        <p>이상품에 대한 설명이 들어갑니다</p>
+                    </div>
+                </div>
+              </a>
+              <a href="#">
+                <div class="card">
+                    <img src="../image/회사이미지.jpg">
+                    <div class="iteminfo">
+                        <h6>COSVIEW를 소개합니다</h6>
+                        <p>이상품에 대한 설명이 들어갑니다</p>
+                    </div>
+                </div>
+              </a>
+              <a href="#">
+                <div class="card">
+                    <img src="../image/회사이미지2.jpg">
+                    <div class="iteminfo">
+                        <h6>COSVIEW 회의실?</h6>
+                        <p>이상품에 대한 설명이 들어갑니다</p>
+                    </div>
+                </div>
+              </a>
+
         
       </main>
 
