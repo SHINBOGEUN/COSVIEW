@@ -56,38 +56,6 @@ width: 29px; height: 29px;
     color: skyblue;
     padding: 5px;
     }
-#pro-search{
-width :450px; 
-height:40px;
-}
-.search-main{
-display: flex;
-justify-content: center;
-margin-top: 70px;
-}
-.search-main button{
-height: 40px;
-border: none;
-background-color: white;
-}
-.search-main button i{
-color: gray;
-font-size: 20px;
-}
-.popular{
-display: flex;
-justify-content: space-around;
-margin-top: 70px;
-text-align: center;
-padding-bottom: 50px;
-border-bottom: 1px solid #C0C0C0;
-}
-
-.best{
-display: flex;
-flex-direction: column;
-align-items: center;
-}
 
 
 #pro-search{
