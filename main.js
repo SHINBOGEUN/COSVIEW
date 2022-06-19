@@ -1,8 +1,17 @@
 let navflag = true;
-
+let cateflag = true;
 
 const openCate = () => {
-  
+  if(cateflag == true){
+    document.getElementById('category').style.display =  'block';
+    document.getElementById('category').style.transition =  '1s';
+
+    cateflag = !cateflag;
+  }else{
+    document.getElementById('category').style.display = 'none';
+    cateflag = !cateflag;
+
+  }
 }
 
 
