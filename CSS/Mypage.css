@@ -1,14 +1,14 @@
 
-    #top-title{
+    #main-body{
         font-size:36px;
         margin-left:20%;
         margin-right:20%;
         }
         
-        #top-title hr{
+        #main-body hr{
         border:2px solid gray;
         }
-        #middle-title{
+        #middle-body{
             font-size:28px;
             margin-left:10%;
             margin-right: 10%; 
