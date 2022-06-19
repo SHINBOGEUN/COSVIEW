@@ -45,3 +45,11 @@ button a {
 .gray-btn:hover{
     box-shadow: 1px 1px 1px 1px gray;
  }
+
+ /* 레이아웃 구역 */
+ main{
+    height: 2300px;
+ }
+ footer{
+     height: 350px;
+ }
