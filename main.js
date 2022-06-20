@@ -28,86 +28,89 @@ const openNav = () => {
     }
   };
 // 메인화면 슬릭
-  $('.one-time').slick({
-    dots: true,
-    infinite: true,
-    speed: 200,
-    slidesToShow: 1,
-    slidesToScroll:1,
-    adaptiveHeight: true,
-    vertical : false,
-    prevArrow:"<button id=prev>&lt;</button>",
-    nextArrow:"<button id=next>&gt;</button>",
-    dots:true,
-    dotsClass:'bn-controller' ,
-  });
-  
-  $('.multiple-items').slick({
-    infinite: true,
-    slidesToShow: 2,
-    speed: 1000,
-    autoplaySpeed : 2000,
-    arrows : false,   //prev,next버튼 표시여부
-    autoplay: true,  //자동넘김 여부
-    slidesToScroll: 3
-  });
 
-  //메인 스크롤 이벤트
-  let controller = new ScrollMagic.Controller();
-  let animateElem = [".animate_1", ".animate_2",".animate_3"];
-  let triggerElem = [".trigger_1", ".trigger_2",".trigger_3"];
+$(document).ready(function() {
+    $('.one-time').slick({
+        dots: true,
+        infinite: true,
+        speed: 200,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        adaptiveHeight: true,
+        vertical: false,
+        prevArrow: "<button id=prev>&lt;</button>",
+        nextArrow: "<button id=next>&gt;</button>",
+        dots: true,
+        dotsClass: 'bn-controller',
+    });
 
-  for (let i = 0; i < animateElem.length; i++) {
-      let currentAnimateElem = animateElem[i];
-      let currentTriggerElem = triggerElem[i];
+    $('.multiple-items').slick({
+        infinite: true,
+        slidesToShow: 2,
+        speed: 1000,
+        autoplaySpeed: 2000,
+        arrows: false,   //prev,next버튼 표시여부
+        autoplay: true,  //자동넘김 여부
+        slidesToScroll: 3
+    });
 
-      let timeline = new TimelineMax();
+    //메인 스크롤 이벤트
+    let controller = new ScrollMagic.Controller();
+    let animateElem = [".animate_1", ".animate_2", ".animate_3"];
+    let triggerElem = [".trigger_1", ".trigger_2", ".trigger_3"];
 
-      let tween_move = TweenMax.fromTo(
-          currentAnimateElem,
-          1,
-          {
-              ease: SlowMo.ease.config(0.7, 0.7, false),
-              y: 50
-          },
-          {
-              ease: SlowMo.ease.config(0.7, 0.7, false),
-              y: -50
-          }
-      );
+    for (let i = 0; i < animateElem.length; i++) {
+        let currentAnimateElem = animateElem[i];
+        let currentTriggerElem = triggerElem[i];
 
-      let tween_opacity = new TimelineMax();
-      tween_opacity
-          .to(currentAnimateElem, 0.3, {
-              ease: Linear.easeNone,
-              opacity: 1
-          })
-          .to(
-              currentAnimateElem, 0.3, {
-                  ease: Linear.easeNone,
-                  opacity: 0
-              },
-              "+=0.4"
-          );
+        let timeline = new TimelineMax();
 
-      timeline.add(tween_move, 0).add(tween_opacity, 0);
+        let tween_move = TweenMax.fromTo(
+            currentAnimateElem,
+            1,
+            {
+                ease: SlowMo.ease.config(0.7, 0.7, false),
+                y: 50
+            },
+            {
+                ease: SlowMo.ease.config(0.7, 0.7, false),
+                y: -50
+            }
+        );
 
-      let scene_main = new ScrollMagic.Scene({
-          triggerElement: currentTriggerElem,
-          duration: "900px"
-      })
-          .setTween(timeline)
-          .addTo(controller);
-  }
-  const video = document.getElementById("bgvid");
+        let tween_opacity = new TimelineMax();
+        tween_opacity
+            .to(currentAnimateElem, 0.3, {
+                ease: Linear.easeNone,
+                opacity: 1
+            })
+            .to(
+                currentAnimateElem, 0.3, {
+                    ease: Linear.easeNone,
+                    opacity: 0
+                },
+                "+=0.4"
+            );
 
-  $(window).scroll(function () {
-      let y = $(window).scrollTop()
-      console.log(y)
-      if (y > 2000) {
-          // $('video').css("display", "none")
-          $('video').fadeOut();
-      } else {
-          $('video').fadeIn();
-      }
-  });
+        timeline.add(tween_move, 0).add(tween_opacity, 0);
+
+        let scene_main = new ScrollMagic.Scene({
+            triggerElement: currentTriggerElem,
+            duration: "900px"
+        })
+            .setTween(timeline)
+            .addTo(controller);
+    }
+    const video = document.getElementById("bgvid");
+
+    $(window).scroll(function () {
+        let y = $(window).scrollTop()
+        console.log(y)
+        if (y > 2000) {
+            // $('video').css("display", "none")
+            $('video').fadeOut();
+        } else {
+            $('video').fadeIn();
+        }
+    })
+});
