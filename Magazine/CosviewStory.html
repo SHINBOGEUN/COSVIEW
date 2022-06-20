@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="../CSS/Footer.css">
     <link rel="stylesheet" href="../CSS/Common.css">
     <link rel="stylesheet" href="../CSS/nav.css">
+    <link rel="stylesheet" href="../CSS/Magazine.css">
+
 <body>
   <nav class="nav-var">
     <div class="logo" id="logo4">
@@ -27,10 +29,10 @@
       <div class="side-menu-center">
         <div class="side-menu-list" id="menu-list">
          <ul class="main-side">
-            <li><a href="../Product/ProductMain.html">제품</a></li>
-           <li><a>코스뷰 이야기</a></li>
-           <li><a href="../ServiceCenter/CSCenter.html">고객센터</a></li>
-           <li><a>마이 페이지</a></li>
+          <li><a href="../Product/ProductMain.html">제품</a></li>
+          <li><a href="#">코스뷰 이야기</a></li>
+          <li><a href="../ServiceCenter/CSCenter.html">고객센터</a></li>
+          <li><a href="../Mypage/My_page.html">마이 페이지</a></li>
          </ul>
         </div>
       </div>
@@ -47,65 +49,7 @@
       <!-- 여기 코드 작성 해주세요 !!! -->
       <main class="container">
             <h1 class="sub-title">COSVIEW 이야기</h1>
-
-            <style>
-              .card{
-                  width: 300px;
-                  height: 300px;
-                  margin: 150px 20px;
-                  position: relative;
-                  cursor: pointer;
-                  border: 0px;
-              }
-              .card img{
-                  width: 100%;
-                  height: 100%;
-                  transition: 0.4s;
-              }
-              .card img:hover{
-                  transform: scale(1.03,1.03);
-                  transition: 0.4s;
-              }
-              .iteminfo{
-                  position: absolute;
-                  top: 310px;
-              }
-              .iteminfo h6{
-                font-size: 1.2rem;
-                width: 300px;
-                /* 일정 글자 수 넘어가면 말줄임  */
-                white-space: nowrap;
-                text-overflow: ellipsis;
-                overflow: hidden;
-                display: inline-block;
-              }
-              .iteminfo p{
-                font-size: 0.9rem;
-                letter-spacing: -1px;
-                /* 일정 글자 수 넘어가면 말줄임  */
-                display: -webkit-box;
-                -webkit-line-clamp: 3;
-                -webkit-box-orient: vertical;
-                overflow: hidden;
-              }
-              .wrapper{
-                  display: flex;
-                  justify-content: space-around;
-                  /* 한 라인에 다 못잡으면 하단으로 내려줌 */
-                  flex-wrap: wrap;
-                  padding-left: 50px;
-                  padding-right: 50px;
-                  padding-bottom: 200px;
-              }
-              .wrapper a{
-                color: black;
-              }
-              .pageNav{
-                margin-top: 150px;
-              }
-
-          </style>
-
+           
             <div class="wrapper">
               <a href="#">
                 <div class="card">
@@ -252,9 +196,7 @@
         
       </main>
 
-
-
-
+      
       <footer>
         <div class="container">
           <div class="first-line">
@@ -283,7 +225,7 @@
 
 
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-      <script src="main.js"></script>
+      <script src="../main.js"></script>
       
 </body>
 </html>
