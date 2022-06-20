@@ -102,6 +102,7 @@ width: 29px; height: 29px;
 
 
 
+
 /* ReviewWrite.css */
 #line{
     border: 0;
@@ -227,3 +228,34 @@ width: 29px; height: 29px;
     display: flex;
     justify-content: center;
 }
+#category{
+    display: none;
+    position: absolute;
+    width: 68%;
+    background-color: rgba(224, 224, 224, 0.92);
+    height: 330px;
+    top: 150px;
+    color: rgb(94, 94, 94);
+    transition-delay: 1s;
+  }
+  #cate-submenu{
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+  }
+  #category ul{
+    list-style: none;
+    padding: 0px;
+  }
+  li{
+    padding: 5px;
+    text-align: center;
+  }
+  b{
+    color: black;
+    display: block;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    border-bottom: 2px solid rgb(94, 94, 94);
+  }
+
