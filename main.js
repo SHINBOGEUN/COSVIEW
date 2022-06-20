@@ -41,6 +41,7 @@ const openNav = () => {
     dots:true,
     dotsClass:'bn-controller' ,
   });
+  
   $('.multiple-items').slick({
     infinite: true,
     slidesToShow: 2,
