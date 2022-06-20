@@ -1,11 +1,4 @@
 
-    /* Container */
-    #container{
-        overflow: hidden;
-        margin-left:15%;
-        margin-right: 15%;
-        margin-top:2%;
-    }
 
     #main-container{
         width: 70%;
@@ -80,10 +73,43 @@
 
     /* ----------------------------------------여기까지 My_page.html---------------------------------------- */
 
-    
+
+
     /* ----------------------------------------아래부터 Inform_change.html---------------------------------------- */
 
 
+    /* ----------------------------------------여기까지 Inform_change.html---------------------------------------- */
+
+
+    /* ----------------------------------------아래부터 reg_cancel.html---------------------------------------- */
+    #main-body{
+        font-size:36px;
+        margin-left:10%;
+        margin-right:10%;
+    }
+    
+    #main-body hr{
+        border:2px solid gray;
+    }
+    #middle-body{
+        font-size:28px;
+        margin-left:10%;
+        margin-right: 10%; 
+        margin-top:10%;
+    }
+    #middle-content{
+        font-size:15px;
+        margin-top:5%;
+      }
+    #button-div{
+        font-size:20px;
+        margin-top:10%;
+    }
+    #button-div button{
+        width:120px;
+        height:50px;
+        margin:0%5%5%10%;
+    }
 
 
 
