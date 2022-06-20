@@ -18,13 +18,13 @@
 <body>
   <nav class="nav-var">
     <div class="logo" id="logo4">
-      <a href="Home.html"><img src="../image/logo4.png" style="height: 45px; width: 45px;" alt="companyLogo"></a>
+      <a href="../Main/Home.html"><img src="../image/logo4.png" style="height: 45px; width: 45px;" alt="companyLogo"></a>
     </div>
     <div class="category">
       <button id="nav-btn" class="navbar-toggler collapsed" onclick="openNav()"><i class="fa-solid fa-bars "></i></button>
     </div>
     <div class="side-menu" id="mySidenav">
-      <a href="Home.html"><img src="../image/logo2.png" style="width: 100%; height: 60px;" alt="companyLogo1"></a>
+      <a href="../Main/Home.html"><img src="../image/logo2.png" style="width: 100%; height: 60px;" alt="companyLogo1"></a>
       <div class="side-menu-center">
         <div class="side-menu-list" id="menu-list">
          <ul class="main-side">
@@ -46,56 +46,54 @@
 
       <!-- 여기 코드 작성 해주세요 !!! -->
       <main class="container">
-          
         <h1 class="sub-title">내 정보 수정</h1>
-        
         <div id="main-container">
-            <div id="basic-information">
-                <span style="font-size:25px;">기본 정보</span>
-                <hr>
-                <div id="basic-informaiton" align="center">
-                  <div style="display:inline-block; width:100px; margin-top:15px; margin-bottom:15px;">이메일</div>
-                  <input type="text" name="email" style="width:300px; height:33px;"placeholder="내용을 입력해주세요"><br>
-
-                  <div style="display:inline-block; width:100px;margin-left:11%;margin-top:15px; margin-bottom:15px;">닉네임</div>
-                  <input type="text" name="nickname" style="width:300px; height:33px;"placeholder="내용을 입력해주세요">
-                  <button style="width:80px;">중복확인</buttoN><br>
-
-                  <div style="display:inline-block; width:100px;margin-top:15px; margin-bottom:15px;">비밀번호</div>
-                  <input type="password" name="password" style="width:300px; height:33px;"placeholder="내용을 입력해주세요">
-                  
-                </div>
-            </div>
-                    
-                <div id="detail-information">
-                  <span style="font-size:25px;">상세 정보</span>
-                  <hr>
-                  <div id="basic-informaiton" align="center">
-                    <div style="display:inline-block; width:100px; margin-top:15px; margin-bottom:15px;">성별
-                    <span style="font-size:10px;">(선택)</span></div>
-                    <div style="display:inline-block;">
-                      <input type="radio" name="gender">남
-                      <input type="radio" name="gender">여
-                    </div><br>
-  
-                    <div style="display:inline-block; width:100px;margin-top:15px; margin-bottom:15px;">주소</div>
-                    <input type="text" name="nickname" style="width:300px; height:33px;"placeholder="내용을 입력해주세요">
-                    
-                  </div>
+          <div class="basic-information">
+            <span style="font-size:25px;">기본 정보</span>
+            <hr>
+            <div>
+              <div class="label1">이메일</div>
+              <input class="input1" placeholder="내용을 입력해주세요"><br>
+              <div class="label2">닉네임</div>
+              <input class="input1" placeholder="내용을 입력해주세요">
+              <button style="width:80px;">중복확인</buttoN><br>
+                <div class="label1">비밀번호</div>
+                <input class="input1" placeholder="내용을 입력해주세요">
               </div>
-                <hr>
-                <a href="../Mypage/reg_cancel.html" style="color:red; text-decoration: none;">회원탈퇴를 원하시나요?</a><br>
-        </div>
-      </main>
+            
+            </div>
+            <span style="font-size:25px;">상세 정보</span>
+            
+            <hr>
+            <div class="basic-information">
+              <div class="basic-informaiton">
+                <div class="label3">성별
+                  <span style="font-size:10px;">(선택)</span></div>
+                  <div style="display:inline-block;">
+                    <div class="male"><input type="radio" name="gender">남</div>
+                    <div class="female"><input type="radio" name="gender">여</div>
+                  </div><br>
+                  <div class="label1">주소</div>
+                  <input class="input1" placeholder="내용을 입력해주세요">
+                </div>
+              
+              </div>
+              <hr>
+              <a href="../Mypage/reg_cancel.html" style="color:red; text-decoration: none;">회원탈퇴를 원하시나요?</a><br>
 
-
+              <div class="button-div2">
+                <button onClick="location.href='../Mypage/cancel_success.html'">확인</button>
+                <button onClick="location.href='../Mypage/My_page.html'">취소</button>
+              </div>
+            </div>            
+          </main>
 
 
       <footer>
         <div class="container">
           <div class="first-line">
             <div class="fot-a">
-              <a href="#" onclick="window.open(`Home.html`, '회사소개','width=500px, height=700px'); return false">회사소개</a>
+              <a href="#" onclick="window.open(`../Main/Home.html`, '회사소개','width=500px, height=700px'); return false">회사소개</a>
               <span> | </span>
               <a href="#">이용약관</a>
               <span> | </span>
