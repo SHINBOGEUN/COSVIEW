@@ -207,3 +207,42 @@
 #check4 ~ label{
     cursor: pointer;
 }
+
+/* Notice Main */
+.NoticeBox{
+    height: 50px; 
+    border-bottom: 1px solid gray; 
+    background-color: gray;
+    display: flex;
+}
+.NoticeBox>span{
+    display: inline-block;
+}
+.NoticeSmallBox{
+    height: 50px; 
+    border-bottom: 1px solid gray; 
+    display: flex;
+}
+.NoticeSmallBox>span{
+    display: inline-block;
+}
+.NoticeSmallBox>span>a{
+    text-decoration: none;
+    color: black;
+}
+.NoticeNum{
+    width: 60px; 
+    text-align: center;
+}
+.NoticeTitle{
+    padding-left: 100px; 
+    width:800px
+}
+.NoticeWriter{
+    width: 60px; 
+    margin-left: 50px;
+}
+.NoticeWriteDay{
+    width: 150px; 
+    margin-left: 50px;
+}
