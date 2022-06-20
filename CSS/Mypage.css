@@ -1,5 +1,4 @@
 
-
     #main-container{
         width: 70%;
         margin: 50px auto;
@@ -68,7 +67,7 @@
 
     /* review */
     #review{
-        height:40%;
+        width:100%; height:500px;
     }
 
     /* ----------------------------------------여기까지 My_page.html---------------------------------------- */
@@ -76,6 +75,17 @@
 
 
     /* ----------------------------------------아래부터 Inform_change.html---------------------------------------- */
+
+    .label1{
+        display:inline-block; width:100px; margin-top:15px; margin-bottom:15px;
+    }
+    .label2{
+        display:inline-block; width:100px;margin-left:9%;margin-top:15px; margin-bottom:15px;
+    }
+    .input1{
+        width:300px; height:33px;
+    }
+
 
 
     /* ----------------------------------------여기까지 Inform_change.html---------------------------------------- */
@@ -118,6 +128,13 @@
 
 
 
+
+
+
+
+
+
+    
 
 
 
