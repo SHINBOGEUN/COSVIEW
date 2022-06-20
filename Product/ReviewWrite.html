@@ -44,13 +44,6 @@
 
 
 
-  <style>
-
-
-
-
-  </style>
-
 
       <!-- 여기 코드 작성 해주세요 !!! -->
       <!-- 제목 -->
@@ -83,31 +76,30 @@
         <hr id="line">
 
         <!-- 내용 입력란  -->
-                            <!-- ********글씨가 계속 옆으로 작성됨 수정필요. -->
         <div class="reviewContent">
-          <input type="text" id="reviewText" placeholder="리뷰 내용을 5글자 이상 작성하여주세요.">
+          <textarea type="text" id="reviewText" placeholder="리뷰 내용을 5글자 이상 작성하여주세요."></textarea>
         </div>
         <hr id="line2">
 
         <!-- 사진첨부 -->
-        <div class="reviewPicture">
+        <div class="reviewPicture">         
           <div id="camera">
             <i class="fa-solid fa-camera"></i>
-            <button id="pictureBtn">사진등록</button>
+            <a href="#"><button id="pictureBtn">사진등록</button></a>
           </div>
           <div>
-            <button id="pictureBtn2">첨부하기</button>
+            <a href="#"><button id="pictureBtn2">첨부하기</button></a>
           </div>
         </div>
         <div class="picture">
-          <img src="../image/크림.png"> 
-          <img src="../image/크림.png" >
+          <img src="../image/크림.png">
+          <img src="../image/크림.png">
         </div>
 
         <!-- 등록버튼 -->
         <div class="reviewBtn">
-          <button class="green-btn me-5">등록</button>
-          <button class="gray-btn">취소</button>
+          <a href="#"><button class="green-btn me-5">등록</button></a>
+          <a href="#"><button class="gray-btn">취소</button></a>
         </div>
 
       </main>
