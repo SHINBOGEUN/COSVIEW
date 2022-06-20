@@ -24,13 +24,13 @@
     
 
     /* information */
-    .age{
+    .age-gender{
         width:60px; height:100%; display:inline-block; border:1px solid gray;text-align: center;
+        line-height:50px;
     }
-    .gender{
-        width:60px; height:100%; display:inline-block; border:1px solid gray; text-align:center;
+    .setting{
+        float:left;
     }
-
     /* submenu */
     .sub-menu div{
         display: inline-block;
@@ -64,7 +64,7 @@
     #product{
         height:10%; cursor:pointer;
     }
-    #product-name{
+    #product-suggestion{
         display:inline-block; width:83%; vertical-align: middle;
     }
 
@@ -72,6 +72,18 @@
     .review{
         width:100%; height:500px;
     }
+    .review-div{
+        width:100%; height:100%;
+        padding-left:5%;
+        padding-right:5%;
+    }
+    #banner-slider{
+    }
+    #banner-slider ul{
+        padding:0px; list-style:none;
+        width: 600px; height:470px;
+    }
+
 
     /* ----------------------------------------여기까지 My_page.html---------------------------------------- */
 
@@ -79,14 +91,38 @@
 
     /* ----------------------------------------아래부터 Inform_change.html---------------------------------------- */
 
+    .basic-information{
+        text-align: center;
+    }
     .label1{
         display:inline-block; width:100px; margin-top:15px; margin-bottom:15px;
     }
     .label2{
         display:inline-block; width:100px;margin-left:9%;margin-top:15px; margin-bottom:15px;
     }
+    .label3{
+        display:inline-block; width:100px;margin-left:9%;margin-top:15px; margin-bottom:15px;
+        position:relative; left:-150px;
+    }
+    .male{
+        display:inline-block; position:relative; left:-110px;
+    }
+    .female{
+        display:inline-block; position:relative; left:-20px;
+    }
     .input1{
         width:300px; height:33px;
+    }
+    .button-div2{
+        text-align: center;
+        font-size:20px;
+        margin-top:8%;
+    }
+    .button-div2 button{
+        margin-left:5%;
+        margin-right: 5%;
+        width:100px;
+        height:50px;
     }
 
 
@@ -113,6 +149,7 @@
     .middle-content{
         font-size:15px;
         margin-top:5%;
+        text-align: center;
       }
     .button-div{
         font-size:20px;
@@ -129,23 +166,5 @@
     /* ----------------------------------------아래부터 cancel_success.html---------------------------------------- */
     .success-page{
         margin-left:15%; margin-right:15%; margin-top:10%; margin-bottom:10%;height: 500px;
+        text-align: center;
     }
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
-    

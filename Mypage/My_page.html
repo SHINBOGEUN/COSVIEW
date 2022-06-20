@@ -60,19 +60,20 @@
 
           <div class="profile">
             <div class="profile-picture">
-              <a href="#"><img src="..\image\프로필사진.jpg" style="width:100px; height: 100px;"></a>
+              <a href="#"><img src="../image/프로필사진.jpg" class=profile-picture alt="profile picture"></a>
             </div>
             
-            <div class="information" style="width:70%; height:100%; margin-left:15px;">
+            <div class="information" style="width:75%; height:100%; margin-left:15px;">
                 <div class="name" style="display:block; font-size:26px;">이름</div>
-                <div class="age-gender">
-                  <div class="age">나이</div>
-                  <div class="gender">성별</div>
+                <div>
+                  <div class="age-gender">나이</div>
+                  <div class="age-gender">성별</div>
                 </div>
               </div>
               
               <div>
-                <a href="..\Mypage\Inform_change.html" class="setting" style="float:left;"><img src="..\image\정보수정버튼.png"></a>
+                <a href="../Mypage/Inform_change.html" class="setting">
+                  <img src="../image/정보수정버튼.png" alt="information changebutton"></a>
               </div>
           </div>
           <hr>
@@ -99,29 +100,56 @@
           </div>
           <hr>
 
-          <div OnClick="location.href='#'" id="product">
-            <div id="product-name">
-            <h6>닥터지</h6><h3>레드블레미쉬 크림</h3>
+          <div OnClick="location.href='../Product/ProductMain.html'" id="product">
+            <div id="product-suggestion">
+              <h6>닥터지</h6><h3>레드블레미쉬 크림</h3>
             </div>
-            <a href="#"><img src="..\image\선크림.png" style="width:100px; height:100px;"></a>
+            <a href="../Product/ProductMain.html">
+              <img src="../image/선크림.png" style="width:100px; height:100px;" alt="suncream">
+            </a>
           </div>
           <hr>
 
           <div class="review">
-            리뷰 공간
+            (리뷰 들어갈 공간)
+          <div id="banner-slider" class="swiper">
+              <ul  class="swiper-wrapper">
+                  <li class="swiper-slide"><div class="review-div">1</div></li>
+                  <li class="swiper-slide"><div class="review-div">2</div></li>
+                  <li class="swiper-slide"><div class="review-div">3</div></li>
+                  <li class="swiper-slide"><div class="review-div">4</div></li> 
+              </ul>
+                  <div class="swiper-pagination"></div>
 
-            
+                  <div class="swiper-button-prev" style="color:lightgray;"></div>
+                  <div class="swiper-button-next" style="color:lightgray;"></div>
+          </div>
+          <script>
+              $(document).ready(function(){
+                  const swiper = new Swiper('.swiper', {
+                      direction: 'horizontal',
+                      loop: true,
+                      pagination: {
+                          el: '.swiper-pagination',
+                          type:"fraction",
+                          clickable : 'true',
+                      },
+                      navigation: {
+                          nextEl: '.swiper-button-next',
+                          prevEl: '.swiper-button-prev',
+                      },
+                      scrollbar: {
+                          el: '.swiper-scrollbar',
+                          draggable: true,
+                      },
+                      speed : 800,
+                  });
+              })
+          </script>
           </div>
           <hr>
-
-          <div class="list-button">
-          <!-- 미완성 -->
-          </div>
-            
         </div>
-      </div>
-
-
+      
     </main>
 
       <footer>
