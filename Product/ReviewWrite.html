@@ -55,10 +55,10 @@
       border: 0;
       height: 2px;
       width: 70%;
-      margin: 40px auto 20px auto;
+      margin: 40px auto;
     }
 
-        /* 제품정보 */
+    /* 제품정보 */
     #PInformation{
       margin-top: 100px;
       display: flex;
@@ -80,7 +80,7 @@
     }
     
 
-        /* 별점 */
+    /* 별점 */
     #starText{
       display: flex;
       justify-content: center;
@@ -93,7 +93,7 @@
       font-size: 40px;
     }
 
-        /* 내용 */
+    /* 내용 */
     .reviewContent{
       display: flex;
       justify-content: center;
@@ -108,7 +108,7 @@
     }
 
 
-        /* 사진첨부 */
+    /* 사진첨부 */
     .reviewPicture{
       display: flex;
       justify-content: space-between;
@@ -118,6 +118,34 @@
     #camera i{
       font-size: 30px;
     }
+    #imgBtn{
+      border: none;
+      border-radius: 5px;
+      background-color: lightgray;
+      height: 30px;
+      width: 80px;
+      font-size: 14px;
+      color: rgb(87, 87, 87);
+    }
+    #imgBtn:hover{
+      box-shadow: 1px 1px 1px 1px gray;
+    }
+    #pictureText{
+      display: flex;
+      position: relative;
+      left: 60%;
+      top: -53%;
+    }
+    #picture{
+      display: flex;
+      width: 70%;
+      margin: 0 auto;
+    }
+    #picture img{
+      border: 1px solid lightgray;
+    }
+
+    /* 등록 취소 버튼 */
     .reviewBtn{
       width: 70%;
       margin: 50px auto;
@@ -173,7 +201,13 @@
             <i class="fa-solid fa-camera"></i>
             <span id="pictureText">사진등록</span>
           </div>
-          <div><button id="imgBtn">첨부하기</button></div>
+          <div>
+            <button id="imgBtn">첨부하기</button>
+          </div>
+        </div>
+        <div id="picture">
+          <img src="../image/크림.png" width="150px" height="150px"> 
+
         </div>
 
         <!-- 등록버튼 -->
