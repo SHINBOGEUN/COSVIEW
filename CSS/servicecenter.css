@@ -115,13 +115,14 @@
 }
 
 .LocationText{
-    margin-top: 20px;
+    margin-top: 10px;
     display:flex;
     justify-content:center;
 }
 
 #locationimg{
-    margin : 50px 0px 0px 70px;
+    display: flex;
+    margin : 30px auto 100px auto;
 }
 
 
