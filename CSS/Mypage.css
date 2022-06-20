@@ -24,11 +24,9 @@
     
 
     /* information */
-    .age{
+    .age-gender{
         width:60px; height:100%; display:inline-block; border:1px solid gray;text-align: center;
-    }
-    .gender{
-        width:60px; height:100%; display:inline-block; border:1px solid gray; text-align:center;
+        line-height:50px;
     }
 
     /* submenu */
@@ -146,22 +144,3 @@
         margin-left:15%; margin-right:15%; margin-top:10%; margin-bottom:10%;height: 500px;
         text-align: center;
     }
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
-    
